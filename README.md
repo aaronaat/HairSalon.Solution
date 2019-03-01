@@ -6,7 +6,7 @@
 ### Description
 Hair salon manager
 
-User can view and add stylists and stylist's clients
+User can view and add stylists and stylist's clientscd c
 
 Behavior | Input | Output
 --- | --- | ---
