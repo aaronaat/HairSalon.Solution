@@ -21,9 +21,10 @@ namespace HairSalon.Tests
     [TestMethod]
     public void ClientConstructor_CreatesInstanceOfClient_Client()
     {
-      Client newClient = new Client("test client", 1);
+      Client newClient = new Client("test", 1);
       Assert.AreEqual(typeof(Client), newClient.GetType());
     }
+
 
     [TestMethod]
     public void Find_ReturnsCorrectClientFromDatabase_Client()
