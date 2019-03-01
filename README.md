@@ -23,6 +23,7 @@ git clone https://github.com/aaronaat/HairSalon.Solution.git
 CREATE DATABASE aaron_taylor;
 USE aaron_taylor;
 CREATE TABLE stylists (id serial PRIMARY KEY, name VARCHAR(255))
+CREATE TABLE clients (id serial PRIMARY KEY, name VARCHAR(255), stylist_id INT)
 ```
 
 ### Known Bugs
