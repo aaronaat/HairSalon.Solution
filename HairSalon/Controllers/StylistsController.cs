@@ -25,6 +25,7 @@ namespace HairSalon.Controllers
     public ActionResult Create(string stylistName)
     {
       Stylist newStylist = new Stylist(stylistName);
+      newStylist.Save();
       List<Stylist> allStylists = Stylist.GetAll();
       return View("Index", allStylists);
     }
@@ -46,9 +47,8 @@ namespace HairSalon.Controllers
     {
       Dictionary<string, object> model = new Dictionary<string, object>();
       Stylist foundStylist = Stylist.Find(stylistId);
-      Client newClient = new Client(clientName);
+      Client newClient = new Client(clientName, stylistId);
       newClient.Save();
-      foundStylist.AddClient(newClient);
       List<Client> stylistClients = foundStylist.GetClients();
       model.Add("clients", stylistClients);
       model.Add("stylist", foundStylist);
