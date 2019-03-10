@@ -16,7 +16,13 @@ user adds stylist client | client name | client saved in database
 ### Setup
 ```
 git clone https://github.com/aaronaat/HairSalon.Solution.git
+cd /HairSalon.Solution/HairSalon
+dotnet restore
+dotnet build
+dotnet run
 ```
+* Open browser to localhost:5000 (or other port if set)
+---
 
 * Instructions to recreate database in MySQL prompt
 ```
