@@ -17,7 +17,6 @@ namespace HairSalon.Tests
     public void Dispose()
     {
       Stylist.ClearAll();
-      Client.ClearAll();
     }
 
     [TestMethod]

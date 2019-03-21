@@ -9,14 +9,15 @@ namespace HairSalon.Tests
   public class ClientTest : IDisposable
   {
 
-    public void Dispose()
-    {
-      Client.ClearAll();
-    }
 
     public ClientTest()
     {
-      DBConfiguration.ConnectionString = "server=localhost;user id=root;password=root;port=3306;database=aaron_taylor_test;";
+      DBConfiguration.ConnectionString = "server=localhost;user id=root;password=root;port=8889;database=aaron_taylor_test;";
+    }
+
+    public void Dispose()
+    {
+      Client.ClearAll();
     }
 
     [TestMethod]
